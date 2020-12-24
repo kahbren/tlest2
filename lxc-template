@@ -125,7 +125,7 @@ if [ $? -ne 0 ]; then
 fi
 eval set -- "$options"
 
-release=precise # Default to the last Ubuntu LTS release for non-Ubuntu systems
+release=bionic # Default to the last Ubuntu LTS release for non-Ubuntu systems
 if [ -f /etc/lsb-release ]; then
     . /etc/lsb-release
     if [ "$DISTRIB_ID" = "Ubuntu" ]; then
